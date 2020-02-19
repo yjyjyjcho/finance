@@ -1,0 +1,38 @@
+import numpy as np
+import pandas as pd
+import seaborn as sns
+
+from scipy import stats
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import cross_val_score
+
+import random
+import matplotlib.pyplot as plt
+
+import datetime
+import pytz
+
+import statsmodels.api as sm
+
+# highlows = local_csv('52_day_highs_lows.csv', date_column='date')
+# highlows = highlows.highs - highlows.lows
+# highlows.plot()
+# plt.title('Number 52 Week Highs Minus 52 Week Lows on the NYSE')
+
+## junk bond demand ##
+
+hy = local_csv('high_yield_BofA.csv', date_column='observation_date', skiprows=10)
+ig = ('AA_yield_BofA.csv', skiprows=10, date_column='observation_date')
+yield_spread = pd.DataFrame({'igyield': ig.BAMLCOA2CAAEY, 'highyield': hy.BAMLHOAOHYM2EY})
+print (yield_spread.highyield.isnull().sum())
+print (yield_spread.igyield.isnull().sum())
+
+yield_spread['spread'] = yield_spread.highyield - yield_spread.igyield
+yield_spread[['highyield', 'igyield']].plot()
+plt.title('High Yield and Investment Grade Bond Yields')
+plt.ylabel('%')
+
+yield_spread.spread.plot()
+plt.title('High Yeild - Investment Grade Spread')
+plt.ylabel('Yield Spread %')
+
