@@ -13,3 +13,15 @@ https://colab.research.google.com/drive/1WXG3cohwO6_0mbmB9CdT37cc1jfE2Zon
 https://www.quandl.com/
 
 퀀들 파이썬 사용법 : https://www.quandl.com/tools/python
+
+
+* local csv 파일 업로드 코드
+from google.colab import files
+uploaded = files.upload()
+
+for fn in uploaded.keys():
+    print('User uploaded file "{name}" with length {length} bytes'.format(
+        name=fn, length=len(uploaded[fn])
+    ))
+    
+    저장 경로 : content 폴더
