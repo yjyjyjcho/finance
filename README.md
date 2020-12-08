@@ -26,4 +26,6 @@ for fn in uploaded.keys():
     
     저장 경로 : content 폴더
 SMP_Fteam_session_pt : https://github.com/yjyjyjcho/BIGDataCampus_project_Remotion-/files/5660542/6.7._F._.pdf
+
+
 DB그룹 자산배분투자대회 : https://github.com/yjyjyjcho/BIGDataCampus_project_Remotion-/files/5660539/default.pdf
