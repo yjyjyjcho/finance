@@ -1,5 +1,7 @@
 # finance
 
+# GOOD TOOL & REFERENCE
+
 고로시아 블로그
 https://dataplay.tistory.com/5?category=845492
 
@@ -25,6 +27,13 @@ for fn in uploaded.keys():
     ))
     
     저장 경로 : content 폴더
+
+# 관심 및 연구 분야    
+
+주가 예측, index fund portfolio 구성, 퀀트, 신용평가, 카드데이터
+
+# 포트폴리오
+
 SMP_Fteam_session_pt : https://github.com/yjyjyjcho/BIGDataCampus_project_Remotion-/files/5660542/6.7._F._.pdf
 
 
