@@ -30,7 +30,7 @@ for fn in uploaded.keys():
 
 # 관심 및 연구 분야    
 
-주가 예측, index fund portfolio 구성, 퀀트, 신용평가, 카드데이터
+주가 예측, index fund portfolio 구성, 퀀트, 신용평가, 카드데이터, 시계열 데이터 처리
 
 # 포트폴리오
 
